@@ -1,0 +1,23 @@
+mixin header(headerMods, currentUrl)
+  -
+    const headerLinks = [
+      {
+        href: "index.html",
+        text: "Главная"
+      },
+      {
+        href: "#",
+        text: "Страница 2"
+      },
+      {
+        href: "catalog.html",
+        text: "Страница 3"
+      },
+    ]
+
+  header.header(class=headerMods)
+    .container
+      .header__content
+        +img("content", "Logo-blue", "png", 70, 70, "Логотип")
+        +img("content", "td-gidravlika", "png", 271, 70, "ТД Гидравлика М")(class="header__title")
+        p.header__desc Продажа спецтехники

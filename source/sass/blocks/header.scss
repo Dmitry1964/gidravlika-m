@@ -1,0 +1,21 @@
+.header {
+  background-color: $color-midnight-express;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+}
+
+.header__desc {
+  color: $color-lavender-blue;
+  font-size: 36px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+// p {
+//   font-family: Helvetica, Arial, sans-serif;
+// }
