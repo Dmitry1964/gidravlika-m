@@ -1,0 +1,14 @@
+mixin banner()
+  section.banner
+    .container
+      .banner__wrapper
+        .banner__chetra
+          +imgsvg("svg", "logo-chetra", "svg", 360, 70, "Логотип Четра")
+          div
+            +picture("content", "banner-chetra-1", "png", 440, 263, "Изображение бульдозера" )
+        .banner__vipo
+          div
+            +picture("content", "banner-vipo-1", "png", 480, 250, "Изображение автовышки" )
+          +imgsvg("svg", "logo-vstm", "svg", 310, 80, "Логотип Четра")
+
+

@@ -1,0 +1,44 @@
+.banner {
+  background-image: url("../../img/content/banner-back.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0 77px 0;
+
+  @media (min-resolution: 192dpi) {
+    background-image: url("../../img/content/banner-back@2x.png");
+  }
+}
+
+.banner__wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1360px;
+  width: 100%;
+  padding: 0 50px;
+}
+
+.banner__chetra {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  width: 50%;
+
+  & img {
+    align-self: flex-end;
+    margin-right: 50px;
+  }
+}
+
+.banner__vipo {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  width: 50%;
+
+  & img {
+    align-self: flex-end;
+    margin-right: 50px;
+  }
+}
+

@@ -18,6 +18,10 @@ mixin header(headerMods, currentUrl)
   header.header(class=headerMods)
     .container
       .header__content
-        +img("content", "Logo-blue", "png", 70, 70, "Логотип")
-        +img("content", "td-gidravlika", "png", 271, 70, "ТД Гидравлика М")(class="header__title")
-        p.header__desc Продажа спецтехники
+        .header__content-logo
+          +imgsvg("svg", "logo", "svg", 50, 50, "Логотип Гидравлика М")
+          p продажа и сервис спецтехники<br>волгоград
+        .header__content-phone
+          +imgsvg("svg", "title", "svg", 175, 45, "Гидравлика М")
+          +imgsvg("svg", "icon-phone", "svg", 30, 30, "Иконка телефон")
+          p +7 (8442) 263-102
