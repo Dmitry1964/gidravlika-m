@@ -16,7 +16,7 @@
   justify-content: start;
 
   & p {
-    background: linear-gradient(90deg, #3233FF 1.78%, #7D81FD 109.46%);
+    background: linear-gradient(90deg, $color-neon-blue, $color-slate-blue);
     background-clip: text;
     color: transparent;
     text-transform: uppercase;
