@@ -1,0 +1,77 @@
+mixin catalog-chetra()
+  -
+    const catalogItems = [
+      {
+        title: "бульдозеры",
+        path: "chetra",
+        image: "buldozer",
+        format: "jpg",
+        width: 200,
+        height: 114,
+        alt: "Бульдозеры Четра",
+        href: "#"
+      },
+
+      {
+        title: "трубоукладчики",
+        path: "chetra",
+        image: "pipes",
+        format: "jpg",
+        width: 200,
+        height: 213,
+        alt: "Трубоукладчики Четра",
+        href: "#"
+
+      },
+
+      {
+        title: "минипогрузчики",
+        path: "chetra",
+        image: "loader-mini",
+        format: "jpg",
+        width: 200,
+        height: 124,
+        alt: "Минипогрузчики Четра",
+        href: "#"
+      },
+
+      {
+        title: "погрузчики",
+        path: "chetra",
+        image: "frontal",
+        format: "jpg",
+        width: 200,
+        height: 114,
+        alt: "Погрузчики Четра",
+        href: "#"
+      },
+
+      {
+        title: "экскаваторы",
+        path: "chetra",
+        image: "exkavator",
+        format: "jpg",
+        width: 200,
+        height: 180,
+        alt: "Экскаваторы Четра",
+        href: "#"
+      }
+    ]
+
+  section.catalog-chetra
+    .catalog-chetra__title
+      .container
+        h2 каталог техники Четра
+    .catalog-chetra-content
+      .container
+        .catalog-chetra__wrapper
+          ul.catalog-chetra__list
+            each item in catalogItems
+              li.catalog-chetra__item
+                a(href=item.href)
+                  .catalog-chetra__item-image
+                  +picture(item.path, item.image, item.format, item.width, item.height, item.alt)
+                  h2.catalog-chetra__item-title=item.title
+
+
+
