@@ -1,0 +1,36 @@
+.info {
+  background-color: $color_smalt;
+  padding: 10px 0 10px;
+
+}
+
+.info__wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.info__address {
+  font-size: 36px;
+  line-height: normal;
+  color: $color-lavender-blue;
+  margin: 0;
+}
+
+.info__phone {
+  display: flex;
+  gap: 15px
+}
+
+.info__email {
+  display: flex;
+  gap: 15px
+}
+
+.btn.btn-info {
+  font-size: 26px;
+  line-height: normal;
+  color: $color-lavender-blue;
+  background-color: transparent;
+}

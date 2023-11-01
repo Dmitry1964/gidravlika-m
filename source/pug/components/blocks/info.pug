@@ -1,0 +1,12 @@
+mixin info()
+  .info
+    .container
+      .info__wrapper
+        p.info__address г. Волгоград  ул.им. Лавренева, 19Д
+        .info__phone
+          +imgsvg("svg", "icon-phone-info", "svg", 50, 50, "Иконка телефона")
+          +btn({text: "+7 (8442) 263-102", href: "tel:+78442263102"}).btn-info
+        .info__email
+          +imgsvg("svg", "icon-mail-info", "svg", 50, 50, "Иконка электронной почты")
+          +btn({text: "td-gidravlika@mail.ru", href: "mailto:td-gidravlika@mail.ru"}).btn-info
+

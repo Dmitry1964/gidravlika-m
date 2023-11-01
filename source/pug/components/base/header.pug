@@ -24,4 +24,4 @@ mixin header(headerMods, currentUrl)
         .header__content-phone
           +imgsvg("svg", "title", "svg", 175, 45, "Гидравлика М")
           +imgsvg("svg", "icon-phone", "svg", 30, 30, "Иконка телефон")
-          p +7 (8442) 263-102
+          +btn({text: "+7 (8442) 263-102", href: "tel:+78442263102"}).header__link
