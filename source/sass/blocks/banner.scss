@@ -5,7 +5,7 @@
   background-size: cover;
   padding: 100px 0 77px 0;
 
-  @media (min-resolution: 192dpi) {
+  @media (min-resolution: $retina-dpi) {
     background-image: url("../img/content/banner-back@2x.png");
   }
 }

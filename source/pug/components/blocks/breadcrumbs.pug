@@ -1,0 +1,10 @@
+mixin breadcrumbs(breadCrumbs)
+  .breadcrumbs
+    .container
+      .breadcrumbs__wrapper
+        each item in breadCrumbs
+          if item.href !== "#"
+            a(href = item.href).breadcrumbs__link=item.name
+          else
+            a(href = item.href).breadcrumbs__link.active=item.name
+

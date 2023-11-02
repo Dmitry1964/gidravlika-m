@@ -9,7 +9,7 @@ mixin catalog-chetra()
         width: 200,
         height: 114,
         alt: "Бульдозеры Четра",
-        href: "#"
+        href: "buldozers.html"
       },
 
       {
@@ -70,7 +70,7 @@ mixin catalog-chetra()
               li.catalog-chetra__item
                 a(href=item.href)
                   .catalog-chetra__item-image
-                  +picture(item.path, item.image, item.format, item.width, item.height, item.alt)
+                    +picture(item.path, item.image, item.format, item.width, item.height, item.alt)
                   h2.catalog-chetra__item-title=item.title
 
 

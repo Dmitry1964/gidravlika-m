@@ -1,0 +1,32 @@
+extends ../components/base/layout
+
+block variables
+  - const title = "Продажа спецтехники" //- на страницах кроме главной используйте О нас — ProjectName
+  - const wrapperMods = ""
+  - const hasHeader = true
+  - const headerMods = ""
+  - const hasFooter = true
+  - const footerMods = ""
+  - const currentUrl = "buldosers.html" //- для остальных страниц пишем пустую строку или индекс активного headerLinks
+
+block main
+
+  main
+    +page-banner("banners", "buldozer", "jpg", 1360, 590, "Будбдозкр")
+    +breadcrumbs([
+    {
+      href: "index.html",
+      name: "Главная"
+    },
+
+    {
+      href: "index.html",
+      name: "Каталог Четра"
+    },
+
+    {
+      href: "#",
+      name: "Бульдозеры"
+    },
+  ])
+
