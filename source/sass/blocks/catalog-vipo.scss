@@ -1,15 +1,15 @@
-.catalog-chetra {
+.catalog-vipo {
   padding: 20px 0 20px;
 }
 
-.catalog-chetra__title {
-  background-color: $color-mardi-gras;
+.catalog-vipo__title {
+  background-color: $color-smalt;
 
   & h2 {
     font-size: 32px;
     font-weight: 700;
     line-height: normal;
-    color: $color-dark-tangerine;
+    color: $color-lavender-blue;
     text-transform: uppercase;
     text-align: center;
     margin: 0;
@@ -17,14 +17,15 @@
   }
 }
 
-.catalog-chetra__wrapper {
-  padding: 10px 0 60px;
-  box-shadow: 0px 0px 5px 0px $color-snuff;
+.catalog-vipo__wrapper {
+  padding: 60px 0 60px;
+  box-shadow: 0px 0px 5px 0px $color-light-steel-blue;
 }
 
-.catalog-chetra__list {
-  display: flex;
-  flex-wrap: wrap;
+.catalog-vipo__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 40px;
   justify-content: space-between;
   align-items: flex-end;
   list-style: none;
@@ -32,7 +33,11 @@
   margin: 0;
 }
 
-.catalog-chetra__item h2 {
+.catalog-vipo__item-image img {
+  margin: 0 auto;
+}
+
+.catalog-vipo__item h2 {
   font-size: 16px;
   line-height: normal;
   font-weight: 700;
@@ -40,5 +45,4 @@
   text-transform: uppercase;
   text-align: center;
   color: $color-mardi-gras;
-
 }
