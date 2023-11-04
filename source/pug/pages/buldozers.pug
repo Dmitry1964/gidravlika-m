@@ -8,25 +8,13 @@ block variables
   - const hasFooter = true
   - const footerMods = ""
   - const currentUrl = "buldosers.html" //- для остальных страниц пишем пустую строку или индекс активного headerLinks
+  - const isChetra = true
+  - const breadCrumbs = [{href: "index.html", name: "Главная"}, {href: "index.html", name: "Каталог Четра"}, {href: "#", name: "Бульдозеры"},]
 
 block main
 
   main
-    +page-banner("banners", "buldozer", "jpg", 1360, 590, "Будбдозкр")
-    +breadcrumbs([
-    {
-      href: "index.html",
-      name: "Главная"
-    },
-
-    {
-      href: "index.html",
-      name: "Каталог Четра"
-    },
-
-    {
-      href: "#",
-      name: "Бульдозеры"
-    },
-  ])
+    +page-banner("Бульдозеры", "banners", "buldozer", "jpg", 1360, 590, "Бульдозеры", isChetra)
+    +breadcrumbs(breadCrumbs)
+    +buldozers-list()
 

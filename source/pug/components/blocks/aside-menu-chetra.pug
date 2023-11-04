@@ -1,0 +1,30 @@
+mixin aside-menu-chetra()
+  -
+    const menu = [
+      {
+        name: "бульдозеры",
+        href: "buldozers.html"
+      },
+      {
+        name: "трубоукладчики",
+        href: "#"
+      },
+      {
+        name: "минипогрузчики",
+        href: "#"
+      },
+      {
+        name: "погрузчики",
+        href: "#"
+      },
+      {
+        name: "экскаваторы",
+        href: "#"
+      },
+    ]
+
+  aside.aside-menu.aside-menu--chetra
+    ul.aside-menu__list
+      each item in menu
+        li.aside-menu__item
+          a(href=item.href).aside-menu__link=item.name

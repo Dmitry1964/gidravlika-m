@@ -1,8 +1,8 @@
-mixin breadcrumbs(breadCrumbs)
+mixin breadcrumbs(breadcrumbs)
   .breadcrumbs
     .container
       .breadcrumbs__wrapper
-        each item in breadCrumbs
+        each item in breadcrumbs
           if item.href !== "#"
             a(href = item.href).breadcrumbs__link=item.name
           else

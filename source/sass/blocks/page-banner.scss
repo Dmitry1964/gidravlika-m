@@ -1,0 +1,18 @@
+.page-banner__wrapper {
+  position: relative;
+}
+
+.page-banner__title {
+  font-size: 56px;
+  margin: 0;
+  position: absolute;
+  color: $color-smalt;
+  left: 50px;
+  top: 50px;
+  text-transform: uppercase;
+
+  &.title-chetra {
+    color: $color-mardi-gras;
+    opacity: 0.8;
+  }
+}

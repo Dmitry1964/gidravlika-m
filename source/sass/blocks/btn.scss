@@ -1,18 +1,29 @@
 .btn {
   display: inline-flex;
-  margin: 10px 0;
   padding: 10px 20px;
+  margin-bottom: 10px;
 
   color: $color-default-white;
 
-  background-color: $color-neon-blue;
+  background-color: $color-smalt;
   border: none;
   cursor: pointer;
 
   transition: opacity $trans-default;
 
+  width: 100%;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+
   &--red {
     background-color: $color-torch-red;
+  }
+
+  &--chetra {
+    background-color: $color-dark-tangerine;
+    color: $color-mardi-gras;
   }
 
   &:disabled {

@@ -1,0 +1,25 @@
+.aside-menu {
+  height: 100%;
+  background-color: $color-smalt;
+
+  &--chetra {
+    background-color: $color-mardi-gras;
+  }
+}
+
+.aside-menu__list {
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+}
+
+.aside-menu__item {
+  padding: 10px 0;
+  border-bottom: 1px solid $color-border;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.aside-menu__link {
+  color: $color-default-white;
+}
