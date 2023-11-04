@@ -1,0 +1,21 @@
+extends ../components/base/layout
+
+block variables
+  - const title = "Продажа спецтехники ТД Гидравлика-М" //- на страницах кроме главной используйте О нас — ProjectName
+  - const wrapperMods = ""
+  - const hasHeader = true
+  - const headerMods = ""
+  - const hasFooter = true
+  - const footerMods = ""
+  - const currentUrl = "pipes.html" //- для остальных страниц пишем пустую строку или индекс активного headerLinks
+  - const isChetra = true
+  - const breadCrumbs = [{href: "index.html", name: "Главная"}, {href: "index.html", name: "Каталог Четра"}, {href: "#", name: "Трубоукладчики"},]
+
+block main
+
+  main
+    +page-banner("Трубоукладчики", "banners", "pipes", "jpg", 1360, 590, "Бульдозеры", isChetra)
+    +breadcrumbs(breadCrumbs)
+    +pipes-list()
+    //- +buldozers-list()
+

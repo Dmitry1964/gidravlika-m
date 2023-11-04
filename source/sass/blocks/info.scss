@@ -29,9 +29,12 @@
 }
 
 .btn.btn-info {
+  align-items: center;
   font-size: 26px;
   line-height: normal;
   color: $color-lavender-blue;
   padding: 0;
+  margin: 0;
   background-color: transparent;
+  text-transform: lowercase;
 }
