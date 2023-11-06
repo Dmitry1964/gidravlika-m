@@ -1,5 +1,4 @@
 .aside-menu {
-  height: 100%;
   background-color: $color-smalt;
 
   &--chetra {
@@ -11,6 +10,9 @@
   list-style: none;
   margin: 0;
   padding: 20px;
+  position: sticky;
+  top: 50px;
+
 }
 
 .aside-menu__item {

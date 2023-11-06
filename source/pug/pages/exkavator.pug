@@ -1,0 +1,20 @@
+extends ../components/base/layout
+
+block variables
+  - const title = "Продажа спецтехники" //- на страницах кроме главной используйте О нас — ProjectName
+  - const wrapperMods = ""
+  - const hasHeader = true
+  - const headerMods = ""
+  - const hasFooter = true
+  - const footerMods = ""
+  - const currentUrl = "buldosers.html" //- для остальных страниц пишем пустую строку или индекс активного headerLinks
+  - const isChetra = true
+  - const breadCrumbs = [{href: "index.html", name: "Главная"}, {href: "index.html", name: "Каталог Четра"}, {href: "#", name: "Экскаваторы"},]
+
+block main
+
+  main
+    +page-banner("Экскаваторы", "banners", "exkavator", "jpg", 1360, 590, "Экскаваторы", isChetra)
+    +breadcrumbs(breadCrumbs)
+    +exkavators-list()
+
