@@ -61,17 +61,20 @@ mixin catalog-chetra()
   section.catalog-chetra
     .catalog-chetra__title
       .container
-        h2 каталог техники Четра
+        h2 каталог Четра
     .catalog-chetra-content
       .container
-        .catalog-chetra__wrapper
-          ul.catalog-chetra__list
+        .catalog-chetra__wrapper.swiper
+          .catalog-chetra__list.swiper-wrapper
             each item in catalogItems
-              li.catalog-chetra__item
+              .catalog-chetra__item.swiper-slide
                 a(href=item.href)
                   .catalog-chetra__item-image
                     +picture(item.path, item.image, item.format, item.width, item.height, item.alt)
                   h2.catalog-chetra__item-title=item.title
+          .swiper-button-next(style={color: '#f3b411'})
+          .swiper-button-prev(style={color: '#f3b411'})
+          .swiper-pagination
 
 
 

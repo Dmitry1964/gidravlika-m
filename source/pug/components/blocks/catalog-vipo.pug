@@ -68,14 +68,17 @@ mixin catalog-vipo()
   section.catalog-vipo
     .catalog-vipo__title
       .container
-        h2 каталог техники витстройтехмаш
+        h2 каталог vipo
     .catalog-vipo-content
       .container
-        .catalog-vipo__wrapper
-          ul.catalog-vipo__list
+        .catalog-vipo__wrapper.swiper
+          .catalog-vipo__list.swiper-wrapper
             each item in catalogItems
-              li.catalog-vipo__item
+              .catalog-vipo__item.swiper-slide
                 a(href=item.href)
                   .catalog-vipo__item-image
                     +picture(item.path, item.image, item.format, item.width, item.height, item.alt)
                   h2.catalog-vipo__item-title=item.title
+          .swiper-button-next
+          .swiper-button-prev
+          .swiper-pagination

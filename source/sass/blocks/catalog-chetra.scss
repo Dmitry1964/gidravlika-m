@@ -20,16 +20,18 @@
 .catalog-chetra__wrapper {
   padding: 10px 0 60px;
   box-shadow: 0px 0px 5px 0px $color-snuff;
+  max-width: 1360px;
+  height: 312px;
 }
 
-.catalog-chetra__list {
+// .catalog-chetra__list {
+//   display: flex;
+// }
+
+.catalog-chetra__item {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-end;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  justify-content: center;
+  align-items: end;
 }
 
 .catalog-chetra__item h2 {
