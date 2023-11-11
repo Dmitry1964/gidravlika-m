@@ -8,6 +8,16 @@
   @media (min-resolution: $retina-dpi) {
     background-image: url("../img/content/banner-back@2x.png");
   }
+
+  @include vp-767 {
+    background-image: url("../img/content/banner-back-mobile.png");
+    height: 300px;
+    padding: 0;
+
+    @media (min-resolution: $retina-dpi) {
+      background-image: url("../img/content/banner-back-mobile@2x.png");
+    }
+  }
 }
 
 .banner__wrapper {
@@ -28,6 +38,10 @@
     align-self: flex-end;
     margin-right: 50px;
   }
+
+  @include vp-767 {
+    display: none;
+  }
 }
 
 .banner__vipo {
@@ -39,6 +53,10 @@
   & img {
     align-self: flex-end;
     margin-right: 50px;
+  }
+
+  @include vp-767 {
+    display: none;
   }
 }
 

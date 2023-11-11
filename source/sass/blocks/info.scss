@@ -9,6 +9,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 50px;
+
+  @include vp-767 {
+    padding: 0;
+  }
 }
 
 .info__address {
@@ -16,16 +20,46 @@
   line-height: normal;
   color: $color-lavender-blue;
   margin: 0;
+
+  @include vp-767 {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+.info__address-breake {
+  display: none;
+
+  @include vp-767 {
+    display: block;
+  }
 }
 
 .info__phone {
   display: flex;
-  gap: 15px
+  gap: 15px;
+
+  @include vp-767 {
+    gap: 10px;
+    justify-content: space-between;
+  }
+}
+
+.info__phone img {
+
+  @include vp-767 {
+    width: 25px;
+    height: 25px;
+  }
 }
 
 .info__email {
   display: flex;
-  gap: 15px
+  gap: 15px;
+
+  @include vp-767 {
+    display: none;
+  }
 }
 
 .btn.btn-info {
@@ -38,4 +72,8 @@
   margin: 0;
   background-color: transparent;
   text-transform: lowercase;
+
+  @include vp-767 {
+    font-size: 14px;
+  }
 }

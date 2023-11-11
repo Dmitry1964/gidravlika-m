@@ -1,6 +1,10 @@
 .header {
   background-color: $color-midnight-express;
-  padding: 20px 0;
+  padding: 25px 0;
+
+  @include vp-767 {
+    padding: 15px 0;
+  }
 }
 
 .header__content {
@@ -8,12 +12,21 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 50px;
+
+  @include vp-767 {
+    padding: 0 10px;
+  }
 }
 
 .header__content-logo {
   display: flex;
   gap: 20px;
   justify-content: start;
+
+  @include vp-767 {
+    gap: 10px;
+    align-items: center;
+  }
 
   & p {
     background: linear-gradient(90deg, $color-neon-blue, $color-slate-blue);
@@ -22,6 +35,19 @@
     text-transform: uppercase;
     margin: 0;
     text-align: center;
+
+    @include vp-767 {
+      font-size: 10px;
+      line-height: 15px;
+    }
+  }
+}
+
+.header__content-logo img {
+
+  @include vp-767 {
+    width: 30px;
+    height: 30px;
   }
 }
 
@@ -30,12 +56,18 @@
   justify-content: end;
   align-items: center;
   gap: 25px;
+}
 
-  & p {
-    font-size: 26px;
-    line-height: normal;
-    color: $color-neon-blue;
-    margin: 0;
+.header__content-phone img:first-child {
+  @include vp-767 {
+    width: 116px;
+    height: 30px;
+  }
+}
+
+.header__content-phone img:nth-child(n+2) {
+  @include vp-767 {
+    display: none;
   }
 }
 
@@ -46,4 +78,8 @@
   background-color: transparent;
   margin: 0;
   padding: 0;
+
+  @include vp-767 {
+    display: none;
+  }
 }

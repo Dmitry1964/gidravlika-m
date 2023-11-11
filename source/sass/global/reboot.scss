@@ -128,3 +128,11 @@ button,
 [type="submit"] {
   appearance: none;
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+
+  @include vp-767 {
+    display: none;
+  }
+}

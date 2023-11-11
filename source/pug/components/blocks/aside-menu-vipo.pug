@@ -1,0 +1,34 @@
+mixin aside-menu-vipo()
+  -
+    const menu = [
+      {
+        name: "автовышки",
+        href: "#"
+      },
+      {
+        name: "манипуляторы",
+        href: "#"
+      },
+      {
+        name: "автокраны",
+        href: "#"
+      },
+      {
+        name: "кму на базе трактора",
+        href: "#"
+      },
+      {
+        name: "бурильно-крановые машины",
+        href: "#"
+      },
+      {
+        name: "мусоровозы",
+        href: "#",
+      }
+    ]
+
+  aside.aside-menu.aside-menu--vipo
+    ul.aside-menu__list
+      each item in menu
+        li.aside-menu__item
+          a(href=item.href).aside-menu__link=item.name

@@ -27,7 +27,7 @@ const markerDefault = L.marker({
   lng: 44.609915,
 },
 {
-  draggable: true,
+  draggable: false,
   icon: iconDefault,
 });
 
