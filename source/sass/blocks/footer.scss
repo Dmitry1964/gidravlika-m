@@ -53,6 +53,7 @@
   & dd {
     margin: 0;
     padding: 5px 0;
+    font-weight: 300;
   }
 
   & dt {
@@ -77,6 +78,7 @@
   & dd {
     margin: 0;
     padding: 5px 0;
+    font-weight: 300;
   }
 
   & dt {
@@ -86,7 +88,6 @@
     @include vp-767 {
       text-align: start;
     }
-
   }
 
   & a {
