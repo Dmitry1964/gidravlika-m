@@ -1,11 +1,29 @@
 .breadcrumbs {
   padding: 10px 0;
+
+  @include vp-767 {
+    background-color: $color-snow;
+  }
 }
 
 .breadcrumbs__wrapper {
   display: flex;
-  gap: 40px;
   padding-left: 50px;
+  justify-content: space-between;
+  align-items: center;
+
+  @include vp-767 {
+    padding: 0;
+  }
+}
+
+.breadcrumbs__links {
+  display: flex;
+  gap: 40px;
+
+  @include vp-767 {
+    gap: 20px;
+  }
 }
 
 .breadcrumbs__link {
@@ -16,6 +34,10 @@
   &.active {
     opacity: 0.5;
     cursor: auto;
+  }
+
+  @include vp-767 {
+    font-size: 10px;
   }
 }
 
@@ -28,8 +50,31 @@
   background-color: $color-smalt;
   right: -25px;
   top: 7px;
+
+  @include vp-767 {
+    width: 5px;
+    height: 5px;
+    right: -15px;
+    top: 10px;
+  }
 }
 
-.breadcrumbs__link:last-child::after {
+.breadcrumbs__link:last-of-type::after {
   opacity: 0;
+}
+
+.breadcrumbs__btn {
+  display: none;
+  justify-items: flex-end;
+  border: none;
+  width: 20px;
+  height: 2px;
+  background-color: $color-smalt;
+  box-shadow:  0 5px 0 $color-smalt, 0 -5px 0 $color-smalt;
+  margin-right: 15px;
+  cursor: pointer;
+
+  @include vp-767 {
+    display: block;
+  }
 }

@@ -3,11 +3,8 @@ import {initModals} from './modules/modals/init-modals';
 import {initCustomSelect} from './modules/form/init-custom-select';
 import {initFormValidate} from './modules/form/init-form-validate';
 import './modules/map';
-// import bannerChetraSlider from './modules/slider';
-// import bannerVipoSlider from './modules/slider';
-// import catalogChetraSlider from './modules/slider';
-import { bannerChetraSlider, bannerVipoSlider, catalogChetraSlider, catalogVipoSlider } from './modules/slider';
-
+import './modules/slider';
+import './modules/breadcrumbs';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -16,10 +13,6 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
-  bannerChetraSlider.start();
-  bannerVipoSlider.start();
-  catalogChetraSlider.start();
-  catalogVipoSlider.start();
 
   // Modules
   // ---------------------------------

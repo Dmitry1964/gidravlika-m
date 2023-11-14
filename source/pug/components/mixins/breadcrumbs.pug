@@ -2,9 +2,10 @@ mixin breadcrumbs(breadcrumbs)
   .breadcrumbs
     .container
       .breadcrumbs__wrapper
-        each item in breadcrumbs
-          if item.href !== "#"
-            a(href = item.href).breadcrumbs__link=item.name
-          else
-            a(href = item.href).breadcrumbs__link.active=item.name
-
+        div.breadcrumbs__links
+          each item in breadcrumbs
+            if item.href !== "#"
+              a(href = item.href).breadcrumbs__link=item.name
+            else
+              a(href = item.href).breadcrumbs__link.active=item.name
+        button.breadcrumbs__btn
