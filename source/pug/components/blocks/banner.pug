@@ -3,7 +3,8 @@ mixin banner()
     .container
       .banner__wrapper
         .banner__chetra
-          +imgsvg("svg", "logo-chetra", "svg", 360, 70, "Логотип Четра")
+          .banner__chetra-logo
+            +imgsvg("svg", "logo-chetra", "svg", 360, 70, "Логотип Четра")
           .swiper.banner__chetra-swiper
             .swiper-wrapper.banner__chetra-swiper-wrapper
               .banner__chetra-item.swiper-slide
@@ -33,4 +34,5 @@ mixin banner()
                 +picture("banners", "banner-vipo-5", "png", 480, 250, "Изображение автокрана" )
               .banner__vipo-item.swiper-slide
                 +picture("banners", "banner-vipo-6", "png", 480, 250, "Изображение мусоровоза" )
-          +imgsvg("svg", "logo-vipo", "svg", 250, 120, "Логотип Четра")
+          .banner__vipo-logo
+            +imgsvg("svg", "logo-vipo", "svg", 250, 120, "Логотип Четра")
