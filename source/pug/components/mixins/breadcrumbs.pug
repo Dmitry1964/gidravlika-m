@@ -1,4 +1,4 @@
-mixin breadcrumbs(breadcrumbs)
+mixin breadcrumbs(breadcrumbs, isButton)
   .breadcrumbs
     .container
       .breadcrumbs__wrapper
@@ -8,4 +8,5 @@ mixin breadcrumbs(breadcrumbs)
               a(href = item.href).breadcrumbs__link=item.name
             else
               a(href = item.href).breadcrumbs__link.active=item.name
-        button.breadcrumbs__btn
+        if isButton
+          button.breadcrumbs__btn

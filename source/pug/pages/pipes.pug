@@ -10,12 +10,13 @@ block variables
   - const currentUrl = "pipes.html" //- для остальных страниц пишем пустую строку или индекс активного headerLinks
   - const isChetra = true
   - const breadCrumbs = [{href: "index.html", name: "Главная"}, {href: "index.html", name: "Каталог Четра"}, {href: "#", name: "Трубоукладчики"},]
+  - const isButton = true
 
 block main
 
   main
     +page-banner("Трубоукладчики", "banners", "pipes", "jpg", 1360, 590, "Бульдозеры", isChetra)
-    +breadcrumbs(breadCrumbs)
+    +breadcrumbs(breadCrumbs, isButton)
     +pipes-list()
     //- +buldozers-list()
 

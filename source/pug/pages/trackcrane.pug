@@ -10,11 +10,12 @@ block variables
   - const currentUrl = "trackcrane.html" //- для остальных страниц пишем пустую строку или индекс активного headerLinks
   - const isChetra = false
   - const breadCrumbs = [{href: "index.html", name: "Главная"}, {href: "index.html", name: "Каталог VIPO"}, {href: "#", name: "автокраны"},]
+    +breadcrumbs(breadCrumbs, isButton)
 
 block main
 
   main
     +page-banner("Автокраны", "banners", "crane", "jpg", 1360, 590, "Автокран", isChetra)
-    +breadcrumbs(breadCrumbs)
+    +breadcrumbs(breadCrumbs, isButton)
     +crane-list()
 

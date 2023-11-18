@@ -1,5 +1,6 @@
 .breadcrumbs {
   padding: 10px 0;
+  background-color: $color-snow;
 
   @include vp-767 {
     background-color: $color-snow;

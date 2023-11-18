@@ -1,9 +1,9 @@
+.page-banner {
+  padding-bottom: 20px;
+}
+
 .page-banner__wrapper {
   position: relative;
-
-  @include vp-767 {
-    padding-bottom: 10px;
-  }
 }
 
 .page-banner__title {

@@ -4,6 +4,7 @@ const bannerChetra = document.querySelector('.banner__chetra-swiper');
 const bannerVipo = document.querySelector('.banner__vipo-swiper');
 const catalogChetra = document.querySelector('.catalog-chetra__wrapper');
 const catalogVipo = document.querySelector('.catalog-vipo__wrapper');
+const chetraUnitImages = document.querySelector('.chetra-unit__slider');
 
 const bannerChetraSlider = new Swiper(bannerChetra, {
   spaceBetween: 30,
@@ -56,7 +57,7 @@ const catalogChetraSlider = new Swiper(catalogChetra, {
 });
 
 const catalogVipoSlider = new Swiper(catalogVipo, {
-  slidesPerView: 5,
+  slidesPerView: 1,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -84,5 +85,16 @@ const catalogVipoSlider = new Swiper(catalogVipo, {
   },
 });
 
+const chetraUnitSlider = new Swiper(chetraUnitImages, {
+  slidesPerView: 1,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    dynamicBullets: true,
+  },
+});
 
-export {catalogChetraSlider, bannerVipoSlider, bannerChetraSlider, catalogVipoSlider};
+export {catalogChetraSlider, bannerVipoSlider, bannerChetraSlider, catalogVipoSlider, chetraUnitSlider};
