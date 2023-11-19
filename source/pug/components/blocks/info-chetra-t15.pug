@@ -1,82 +1,58 @@
-mixin info-chetra-t11()
+mixin info-chetra-t15()
   -
     const images = [
       {
-        path: "bulldozer-t11",
-        image: "t11-isometry-front",
+        path: "bulldozer-t15",
+        image: "t15-isometry-front",
         format: "jpg",
         width: 680,
         height: 475,
-        altText: "Изображение Бульдозер Т11 изометрия ",
+        altText: "Изображение Бульдозер Т15 ",
       },
       {
-        path: "bulldozer-t11",
-        image: "t11-front",
+        path: "bulldozer-t15",
+        image: "t15-front",
         format: "jpg",
         width: 680,
         height: 475,
-        altText: "Изображение Бульдозер Т11 изометрия ",
+        altText: "Изображение Бульдозер T15 ",
       },
       {
-        path: "bulldozer-t11",
-        image: "t11-right",
+        path: "bulldozer-t15",
+        image: "t15-right",
         format: "jpg",
         width: 680,
         height: 475,
-        altText: "Изображение Бульдозер Т11 изометрия ",
+        altText: "Изображение Бульдозер T15 ",
       },
       {
-        path: "bulldozer-t11",
-        image: "t11-left",
+        path: "bulldozer-t15",
+        image: "t15-left",
         format: "jpg",
         width: 680,
         height: 475,
-        altText: "Изображение Бульдозер Т11 изометрия ",
+        altText: "Изображение Бульдозер T15 ",
       },
       {
-        path: "bulldozer-t11",
-        image: "t11-back",
+        path: "bulldozer-t15",
+        image: "t15-back",
         format: "jpg",
         width: 680,
         height: 475,
-        altText: "Изображение Бульдозер Т11 изометрия ",
+        altText: "Изображение Бульдозер T15 ",
       },
       {
-        path: "bulldozer-t11",
-        image: "t11-isometry-back",
+        path: "bulldozer-t15",
+        image: "t15-isometry-back",
         format: "jpg",
         width: 680,
         height: 475,
-        altText: "Изображение Бульдозер Т11 изометрия ",
-      },
-            {
-        path: "bulldozer-t11",
-        image: "t11-cab1",
-        format: "jpg",
-        width: 680,
-        height: 475,
-        altText: "Изображение кабины Бульдозера Т11",
-      },
-      {
-        path: "bulldozer-t11",
-        image: "t11-cab2",
-        format: "jpg",
-        width: 680,
-        height: 475,
-        altText: "Изображение кабины Бульдозера Т11",
-      },
-      {
-        path: "bulldozer-t11",
-        image: "t11-cab3",
-        format: "jpg",
-        width: 680,
-        height: 475,
-        altText: "Изображение кабины Бульдозера Т11",
+        altText: "Изображение Бульдозер T15 ",
       },
     ]
 
-  -const frontOptions = ['полусферический отвал  / 3331 x 1577 / 5,6', 'прямой отвал / 4188 x 1150 / 4,3', 'поворотный механический отвал / 3650 x 1168 / 4']
-  -const backOptions = ['рыхлитель 1 зуб', 'рыхлитель 3 зуба', 'рыхлитель 7 зубьев', 'лебедка']
+  -const frontOptions = ['полусферический отвал  / 3794 x 1544 / 6,8', 'полусферический отвал (мелиоративный) / 4100 x 1542 / 9,2', 'прямой отвал / 3880 x 1530 / 5,8', 'сферический отвал / 4058 x 1555 / 8,5']
+  -const backOptions = ['рыхлитель 1 зуб', 'рыхлитель 3 зуба', 'лебедка']
   -const options = ['Двойной стеклопакет кабины', 'Система спутникового мониторинга ГЛОНАСС/GPS','Зависимый и независимый отопитель кабины','Система предпускового подогрева двигателя','Температурное исполнение -50С +35С','Аудиосистема','Автоматический звуковой сигнал заднего хода','Звуковой сигнал переднего хода','Боковые зеркала заднего вида','Сиденье с микроподрессовыванием и пневмоподвеской']
 
   section.chetra-unit
@@ -96,13 +72,13 @@ mixin info-chetra-t11()
           h3.chetra-unit__info-title Основные характеристики
           dl.chetra-unit__info-list
             dt Модель двигателя:
-            dd ЯМЗ-236 НД-2 / Cummins QSB6.7
+            dd  ЯМЗ-238 НД7-1 / Cummins QSC8.3
             dt Мощность номинальная, кВт (л.с.):
-            dd 156 (210) / 152 (207)
+            dd 184 (250) / 193 (263)
             dt Мощность эксплуатационная, кВт (л.с.):
-            dd 136 (185) / 138 (187)
+            dd 180 (245) / 174 (235)
             dt Эксплуатационная масса, т:
-            dd от 19 до 23,4
+            dd от 24,7 до 29,9
           h3.chetra-unit__options-title Переднее навесное оборудование / размеры (ШхВ) / Объем отвала (м3)
           ul.chetra-unit__front-options
             for item in frontOptions
