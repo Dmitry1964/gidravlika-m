@@ -11,7 +11,7 @@
   margin: 0;
   position: absolute;
   color: $color-smalt;
-  left: 50px;
+  right: 50px;
   top: 50px;
   text-transform: uppercase;
 
@@ -21,7 +21,7 @@
 
   @include vp-1023 {
     font-size: 32px;
-    left: 40px;
+    right: 40px;
     top: 40px;
   }
 
@@ -33,7 +33,6 @@
   }
 
   &.title-chetra {
-    color: $color-mardi-gras;
-    opacity: 0.8;
+    color: $color-dark-tangerine;
   }
 }
