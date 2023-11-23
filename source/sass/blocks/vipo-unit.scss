@@ -19,10 +19,11 @@
 }
 
 .vipo-unit__images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @include vp-767 {
-    display: flex;
-    justify-content: center;
     order: 1;
   }
 }

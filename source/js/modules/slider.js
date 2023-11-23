@@ -111,5 +111,21 @@ const vipoUnitSlider = new Swiper(vipoUnitImages, {
   },
 });
 
+const handleSwiperBtnClick = () => {
+  const optionsBase = document.querySelector('.vipo-unit__options-base');
+  const dimensions = document.querySelector('.vipo-unit__options-dimensions');
+  optionsBase.textContent = '';
+  dimensions.textContent = '';
+  setTimeout(() => {
+    const activeSlide = document.querySelector('.swiper-slide-active');
+    const baseName = activeSlide.getAttribute('data-base');
+    const dimensionsParam = activeSlide.getAttribute('data-dimensions');
+    optionsBase.textContent = baseName;
+    dimensions.textContent = dimensionsParam;
+  }, 300);
+};
+
+vipoUnitSlider.on('activeIndexChange', handleSwiperBtnClick);
+
 
 export {catalogChetraSlider, bannerVipoSlider, bannerChetraSlider, catalogVipoSlider, chetraUnitSlider, vipoUnitSlider};
