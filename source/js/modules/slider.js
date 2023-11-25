@@ -113,15 +113,16 @@ const vipoUnitSlider = new Swiper(vipoUnitImages, {
 
 const handleSwiperBtnClick = () => {
   const optionsBase = document.querySelector('.vipo-unit__options-base');
-  const dimensions = document.querySelector('.vipo-unit__options-dimensions');
-  optionsBase.textContent = '';
-  dimensions.textContent = '';
+  const dimensionsElem = document.querySelector('.vipo-unit__options-dimensions');
+  const radiusElem = document.querySelector('.vipo-unit__options-radius')
   setTimeout(() => {
     const activeSlide = document.querySelector('.swiper-slide-active');
     const baseName = activeSlide.getAttribute('data-base');
     const dimensionsParam = activeSlide.getAttribute('data-dimensions');
+    const radiusParam = activeSlide.getAttribute('data-radius');
     optionsBase.textContent = baseName;
-    dimensions.textContent = dimensionsParam;
+    dimensionsElem.textContent = dimensionsParam;
+    radiusElem.textContent = radiusParam;
   }, 300);
 };
 

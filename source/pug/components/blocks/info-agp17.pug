@@ -1,80 +1,58 @@
-mixin info-agp12()
+mixin info-agp17()
   -
     const images = [
       {
-        path: "agp-vipo12",
-        image: "agp-vipo12-1",
+        path: "agp-vipo17",
+        image: "agp-vipo17-1",
         format: "jpg",
         width: 690,
         height: 590,
-        altText: "Изображение автовышка Випо-12",
+        altText: "Изображение автовышка Випо-17",
         base: "ГАЗ-А21",
-        radius: "8",
-        dimensions: "6,125х2,2х2,755"
+        radius: "11.2",
+        dimensions: "5,7х2,2х3,03"
       },
       {
-        path: "agp-vipo12",
-        image: "agp-vipo12-2",
+        path: "agp-vipo17",
+        image: "agp-vipo17-2",
         format: "jpg",
         width: 690,
         height: 590,
-        altText: "Изображение автовышка Випо-12",
-        base: "ГАЗ-А22",
-        radius: "8",
-        dimensions: "6,860х2,2х2,755",
-      },
-      {
-        path: "agp-vipo12",
-        image: "agp-vipo12-3",
-        format: "jpg",
-        width: 690,
-        height: 590,
-        altText: "Изображение автовышка Випо-12",
+        altText: "Изображение автовышка Випо-17",
         base: "ГАЗ-3302",
-        radius: "8",
-        dimensions: "6,03х2,2х2,8",
-      },
-      {
-        path: "agp-vipo12",
-        image: "agp-vipo12-4",
-        format: "jpg",
-        width: 690,
-        height: 590,
-        altText: "Изображение автовышка Випо-12",
-        base: "ГАЗ-330232",
-        radius: "8",
-        dimensions: "6,790х2,2х2,8",
+        radius: "11.2",
+        dimensions: "5,7х2,2х3,75",
       },
     ]
   section.vipo-unit
     .container
-      h2.visually-hidden Автовышка Випо-12 Мини
+      h2.visually-hidden Автовышка Випо-17
       .vipo-unit__content
         .vipo-unit__slider.swiper
           .vipo-init__list.swiper-wrapper
             for item in images
-              .vipo-unit__item.swiper-slide(data-base=item.base, data-dimensions=item.dimensions)
+              .vipo-unit__item.swiper-slide(data-base=item.base, data-dimensions=item.dimensions, data-radius=item.radius)
                 +picture(item.path, item.image, item.format, item.width, item.height, item.altText)
           if (images.length > 1)
             .swiper-button-next
             .swiper-button-prev
             .swiper-pagination
         .vipo-unit__images
-          +picture("agp-vipo12", "agp-vipo12-graf", "jpg", 650, 456, "Диаграмма грузоподъемности")
+          +picture("agp-vipo17", "agp-vipo17-graf", "jpg", 540, 590, "Диаграмма грузоподъемности")
         .vipo-unit__options
           dl.vipo-unit__options-list
             dt Модель шасси
             dd.vipo-unit__options-base ГАЗ-А21
             dt Грузоподъемность люльки, кг
-            dd 120
+            dd 200
             dt Рабочая высота подъема, м
-            dd 12
+            dd 17
             dt Вылет, м
-            dd.vipo-unit__options-radius 8
+            dd.vipo-unit__options-radius 11.2
             dt Угол поворота стрелы
             dd 360°
             dt Габариты (ДхВхШ)
-            dd.vipo-unit__options-dimensions 6,125х2,2х2,755
+            dd.vipo-unit__options-dimensions 5,7х2,2х3,03
         .vipo-unit__features
           ul.vipo-unit__features-list
             li.vipo-unit__features-item Телескопическая стрела (основная стрела + 2 секции)
