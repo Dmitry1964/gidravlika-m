@@ -4,6 +4,8 @@ import {initCustomSelect} from './modules/form/init-custom-select';
 import {initFormValidate} from './modules/form/init-form-validate';
 import './modules/map';
 import './modules/slider';
+import './modules/agp-slider';
+import './modules/kmu-slider';
 import './modules/breadcrumbs';
 // ---------------------------------
 
