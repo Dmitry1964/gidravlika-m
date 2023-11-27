@@ -1,20 +1,20 @@
-mixin info-dvina5000()
+mixin info-dvina6300()
   -
     const images = [
       {
-        path: "kmu-dvina5000",
-        image: "kmu-dvina5000-1",
+        path: "kmu-dvina6300",
+        image: "kmu-dvina6300-1",
         format: "jpg",
         width: 690,
         height: 590,
-        altText: "Изображение КМУ Двина 5000",
-        base: "КАМАЗ-43118",
+        altText: "Изображение КМУ Двина 6300",
+        base: "КАМАЗ-65115",
         liftingMin: "590",
-        liftingMax: "5 000",
+        liftingMax: "6 300",
         radiusMin: "2",
-        radiusMax: "10",
-        topMax: "11.7",
-        bottomMax: "13.3",
+        radiusMax: "12.3",
+        topMax: "14.7",
+        bottomMax: "14.7",
       },
     ]
   section.kmu-unit
@@ -31,26 +31,26 @@ mixin info-dvina5000()
             .swiper-button-prev
             .swiper-pagination
         .kmu-unit__images
-          +picture("kmu-dvina5000", "kmu-dvina5000-graf", "jpg", 634, 590, "Диаграмма грузоподъемности")
+          +picture("kmu-dvina6300", "kmu-dvina6300-graf", "jpg", 628, 590, "Диаграмма грузоподъемности")
         .kmu-unit__options
           dl.kmu-unit__options-list
             dt Модель шасси
-            dd.kmu-unit__options-base КАМАЗ-43118
+            dd.kmu-unit__options-base КАМАЗ-65115
             dt Грузоподъемность max, кг
-            dd.kmu-unit__options-lifting--max 5 000
+            dd.kmu-unit__options-lifting--max 6 300
             dt Грузоподъемность min, кг
             dd.kmu-unit__options-lifting--min 590
             dt Вылет max, м
-            dd.kmu-unit__options-radius--max 10.2
+            dd.kmu-unit__options-radius--max 12.3
             dt Вылет min, м
             dd.kmu-unit__options-radius--min 2
             dt Рабочая высота max,м
-            dd.kmu-unit__options-top 11.7
+            dd.kmu-unit__options-top 14.5
             dt Глубина опускания max, м
-            dd.kmu-unit__options-bottom 13.3
+            dd.kmu-unit__options-bottom 14.7
         .kmu-unit__features
           ul.kmu-unit__features-list
-            li.kmu-unit__features-item Телескопическая стрела (основная стрела + 3 секции)
+            li.kmu-unit__features-item Телескопическая стрела (основная стрела + 4 секции)
             li.kmu-unit__features-item Цепная синхронизация выдвижения секций
             li.kmu-unit__features-item Гидравлическое управление с портала
             li.kmu-unit__features-item Дополнительно может комплектоваться люлькой и буром
