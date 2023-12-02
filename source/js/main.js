@@ -7,6 +7,7 @@ import './modules/slider';
 import './modules/agp-slider';
 import './modules/kmu-slider';
 import './modules/breadcrumbs';
+import './modules/mksm-slider';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
