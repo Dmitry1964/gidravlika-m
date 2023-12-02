@@ -25,9 +25,12 @@
 
 .catalog__item {
   border: 1px solid $color-gainsboro;
-  max-width: 218px;
   background-color: $color-snow;
   width: 226px;
+
+  @include vp-767 {
+    width: 300px;
+  }
 }
 
 .catalog__item-image {
@@ -35,6 +38,7 @@
   flex-direction: column;
   align-items: center;
 }
+
 
 .catalog__item-title {
   display: flex;
