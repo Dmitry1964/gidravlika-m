@@ -84,3 +84,10 @@
 .excavator-unit__info-list dd:nth-of-type(2n + 1) {
   background-color: $color-snow;
 }
+
+.excavator-unit__info-bolean {
+  background-image: url('../img/svg/icon-ok.svg');
+  background-size: 24px 24px;
+  background-position: right;
+  background-repeat: no-repeat;
+}
