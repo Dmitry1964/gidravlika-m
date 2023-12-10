@@ -10,7 +10,7 @@ const ICON_ANCHOR_SIZIES = [26, 52];
 const map = L.map('map', {
   scrollWheelZoom: false,
 }
-).setView([48.822733, 44.609915], 15);
+).setView([48.822733, 44.609915], 16);
 
 L.tileLayer(MAP_ADDRESS, {
   mapAttribution,
