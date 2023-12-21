@@ -21,6 +21,9 @@
 .breadcrumbs__links {
   display: flex;
   gap: 40px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 
   @include vp-767 {
     gap: 20px;
@@ -30,7 +33,6 @@
 .breadcrumbs__link {
   text-transform: uppercase;
   color: $color-smalt;
-  position: relative;
 
   &.active {
     opacity: 0.5;
@@ -42,7 +44,11 @@
   }
 }
 
-.breadcrumbs__link::after {
+.breadcrumbs__item {
+  position: relative;
+}
+
+.breadcrumbs__item::after {
   content: '';
   position: absolute;
   width: 10px;
@@ -50,17 +56,17 @@
   border-radius: 50%;
   background-color: $color-smalt;
   right: -25px;
-  top: 7px;
+  top: 8px;
 
   @include vp-767 {
     width: 5px;
     height: 5px;
     right: -15px;
-    top: 10px;
+    top: 12px;
   }
 }
 
-.breadcrumbs__link:last-of-type::after {
+.breadcrumbs__item:last-of-type::after {
   opacity: 0;
 }
 
