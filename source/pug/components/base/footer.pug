@@ -1,6 +1,6 @@
 mixin footer(footerMods)
   footer.footer
-    .footer__left
+    .footer__left(itemscope, itemtype="http://schema.org/Organization")
       .footer__left-content
         .footer__logo
          +imgsvg("svg", "logo", "svg", 50, 50, "Логотип Гидравлика М")
@@ -15,7 +15,7 @@ mixin footer(footerMods)
               a(href="tel:+79053953202") 8 905 395-32-02
             dt Электронная почта
             dd
-              a(href="mailto:td-gidravlika@mail.ru") td-gidravlika@mail.ru
+              a(href="mailto:gidravlika-m@mail.ru") gidravlika-m@mail.ru
           dl.footer__service-list
             dt Ремонт и сервис спецтехники
             dd
