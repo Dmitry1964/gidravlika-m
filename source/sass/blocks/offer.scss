@@ -25,11 +25,27 @@
   justify-self: flex-end;
 }
 
+.offer__info-list {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 .offer__info-item {
   padding: 20px;
   background-color: $color-whitesmoke;
   border-radius: 20px;
-  // height: 485px;
+  opacity: 0;
+  transform: translateX(50px);
+  transition: transform $trans-600;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+
+  &--current {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .offer__info-title {
@@ -67,18 +83,11 @@
 .offer__info-description ul {
   margin: 0 0 10px;
   padding: 0 0 0 20px;
-  // display: flex;
 }
 
 .offer__info-description li {
   font-family: Arial, sans-serif;
 }
-
-// .offer__buttons {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-between;
-// }
 
 .offer__button {
   display: flex;
@@ -89,6 +98,18 @@
   border-radius: 20px;
   cursor: pointer;
   margin-bottom: 30px;
+  color: $color-mardi-gras;
+  transition: background-color $trans-default, color $trans-default, opasity $trans-600 ;
+
+  &--current {
+    background-color: $color-palatine-purple;
+    color: $color-dark-tangerine;
+  }
+
+
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 .offer__button-img {
@@ -96,6 +117,11 @@
   background-color: $color-snow;
   border-radius: 10px;
   margin-right: 20px;
+  transition: background-color $trans-default;
+}
+
+.offer__button--current .offer__button-img {
+  background-color: $color-mardi-gras;
 }
 
 .offer__button-title {
@@ -103,5 +129,5 @@
   line-height: 30px;
   font-weight: 400;
   margin: 0;
-  color: $color-mardi-gras;
+  // color: $color-mardi-gras;
 }
