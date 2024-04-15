@@ -14,13 +14,13 @@
 }
 
 .catalog__list--start {
-    justify-content: flex-start;
-    padding-left: 20px;
+  justify-content: flex-start;
+  padding-left: 20px;
 
-    @include vp-767 {
-      justify-content: center;
-      width: 100%;
-    }
+  @include vp-767 {
+    justify-content: center;
+    width: 100%;
+  }
 }
 
 .catalog__item {

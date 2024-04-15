@@ -41,6 +41,7 @@
   & dd {
     margin: 0;
     padding: 5px 0;
+    text-align: right;
   }
 
   @include vp-1023 {
@@ -54,13 +55,6 @@
 
 .kmu-unit__options-list dd:nth-of-type(2n + 1) {
   background-color: $color-snow;
-}
-
-.kmu-unit__options-list dd {
-
-  @include vp-767 {
-    text-align: right;
-  }
 }
 
 .kmu-unit__features-list {

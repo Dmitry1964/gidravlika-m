@@ -75,7 +75,7 @@
   }
 
   & p {
-    font-family: Arial, sans-serif;
+    font-family: "Arial", sans-serif;
     margin: 0;
   }
 }
@@ -86,7 +86,7 @@
 }
 
 .offer__info-description li {
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
 }
 
 .offer__button {
@@ -99,7 +99,7 @@
   cursor: pointer;
   margin-bottom: 30px;
   color: $color-mardi-gras;
-  transition: background-color $trans-default, color $trans-default, opasity $trans-600 ;
+  transition: background-color $trans-default, color $trans-default, opasity $trans-600;
 
   &--current {
     background-color: $color-palatine-purple;
@@ -114,14 +114,14 @@
 
 .offer__button-img {
   padding: 5px;
-  background-color: $color-snow;
+  background-color: $color-dark-tangerine;
   border-radius: 10px;
   margin-right: 20px;
   transition: background-color $trans-default;
 }
 
 .offer__button--current .offer__button-img {
-  background-color: $color-mardi-gras;
+  background-color: $color-lightning-yellow;
 }
 
 .offer__button-title {
@@ -129,5 +129,4 @@
   line-height: 30px;
   font-weight: 400;
   margin: 0;
-  // color: $color-mardi-gras;
 }

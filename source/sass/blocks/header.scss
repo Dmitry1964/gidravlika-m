@@ -48,7 +48,6 @@
 }
 
 .header__content-logo img {
-
   @include vp-1023 {
     width: 30px;
     height: 30px;
@@ -70,7 +69,6 @@
 }
 
 .header__content-phone img:nth-child(n+2) {
-
   @include vp-1023 {
     width: 20px;
     height: 20px;
