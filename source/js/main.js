@@ -8,7 +8,7 @@ import './modules/agp-slider';
 import './modules/kmu-slider';
 import './modules/breadcrumbs';
 import './modules/mksm-slider';
-import { initOffer } from './modules/modals/offer';
+import {initOffer} from './modules/modals/offer';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {

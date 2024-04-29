@@ -3,16 +3,16 @@ mixin offer()
     .container
       h2.offer__title Примите участие в программе субсидирования лизинга
       .offer__content
-        .offer__info.swipe
-          .offer__info-list.swiper-wrappe
-            .offer__info-item.swiper-slid
+        .offer__info
+          .offer__info-list
+            .offer__info-item
               .offer__info-title
                 +imgsvg('svg', 'logo-chetra-small', 'svg', 62, 16, 'логотип Четра')
                 h3 Субсидирование лизинга
               .offer__info-description
                 h3 Субсидирование лизинга специализированной техники и оборудования в 2024г
                 p Постановление Правительства РФ от 3 июня 2020 г. №&nbsp;811 “Об утверждении Правил предоставления субсидии из федерального бюджета на возмещение потерь в доходах российских лизинговых организаций при предоставлении лизингополучателю скидки по уплате авансового платежа по договорам лизинга специализированной техники и (или) оборудования”
-            .offer__info-item.swiper-slid
+            .offer__info-item
               .offer__info-title
                 +imgsvg('svg', 'logo-chetra-small', 'svg', 62, 16, 'логотип Четра')
                 h3 Выгода потребителя
@@ -26,7 +26,7 @@ mixin offer()
                   li Карелии, Коми, Архангельской, Калининградской, Мурманской областей
                   li Республики Крым, Севастополя
                 p До 10% от цены техники на условии “франко-завод” (с учетом НДС) для остальных субъектов
-            .offer__info-item.swiper-slid
+            .offer__info-item
               .offer__info-title
                 +imgsvg('svg', 'logo-chetra-small', 'svg', 62, 16, 'логотип Четра')
                 h3 Условия получения субсидии
@@ -50,3 +50,8 @@ mixin offer()
             .offer__button-img
               +imgsvg('svg','conditions', 'svg', 50, 50, 'иконка субсидии')
             h3.offer__button-title Условия получения субсидии
+        .offer__slider-buttons
+          button.offer__slider-btn.offer__slider-btn--prev(data-button='button-prev')
+            +imgsvg('svg', 'slide-prev', 'svg', 15, 15, 'стрелка назад')
+          button.offer__slider-btn.offer__slider-btn--next(data-button='button-next')
+            +imgsvg('svg', 'slide-next', 'svg', 15, 15, 'стрелка назад')

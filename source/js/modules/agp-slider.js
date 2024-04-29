@@ -16,7 +16,7 @@ const vipoUnitSlider = new Swiper(vipoUnitImages, {
 const handleSwiperBtnClick = () => {
   const optionsBase = document.querySelector('.vipo-unit__options-base');
   const dimensionsElem = document.querySelector('.vipo-unit__options-dimensions');
-  const radiusElem = document.querySelector('.vipo-unit__options-radius')
+  const radiusElem = document.querySelector('.vipo-unit__options-radius');
   setTimeout(() => {
     const activeSlide = document.querySelector('.swiper-slide-active');
     const baseName = activeSlide.getAttribute('data-base');

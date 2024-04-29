@@ -98,6 +98,4 @@ const chetraUnitSlider = new Swiper(chetraUnitImages, {
   },
 });
 
-
-
 export {catalogChetraSlider, bannerVipoSlider, bannerChetraSlider, catalogVipoSlider, chetraUnitSlider};
