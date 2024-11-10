@@ -75,7 +75,7 @@ const initOffer = () => {
       buttonPrev.classList.remove('offer__slider-btn--disabled');
       const data = buttonEl.getAttribute('data-button');
       const countNext = getCount(data);
-      if (countNext === 2) {
+      if (countNext === offerInfoElements.length - 1) {
         buttonNext.setAttribute('disabled', true);
         buttonNext.classList.add('offer__slider-btn--disabled');
       }

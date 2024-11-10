@@ -36,6 +36,14 @@ mixin offer()
                   li Техника произведена не ранее чем за 3 года до года заключения договора лизинга, ранее не передавалась в лизинг, не была в собственности физического лица и не находилась на регистрационном учете
                   li На технику выдано заключение по ПП РФ № 719
                   li Договор лизинга заключен не ранее 1 ноября 2023г, передача техники лизингополучателю осуществлена не ранее 1 января 2024г
+            .offer__info-item
+              .offer__info-title
+                +imgsvg('svg', 'logo-chetra-small', 'svg', 62, 16, 'логотип Четра')
+                h4.offer__title-video Жизнь за пределами ключевой ставки
+              .offer__info-video
+                <video controls width="260">
+                  <source src="video/video-mp4.mp4" type="video/mp4">
+                </video>
 
         .offer__buttons
           .offer__button
@@ -50,6 +58,11 @@ mixin offer()
             .offer__button-img
               +imgsvg('svg','conditions', 'svg', 50, 50, 'иконка субсидии')
             h3.offer__button-title Условия получения субсидии
+          .offer__button
+            .offer__button-img
+              +imgsvg('svg','video', 'svg', 50, 50, 'иконка видео')
+            h3.offer__button-title Видео
+
         .offer__slider-buttons
           button.offer__slider-btn.offer__slider-btn--prev(data-button='button-prev')
             +imgsvg('svg', 'slide-prev', 'svg', 15, 15, 'стрелка назад')
